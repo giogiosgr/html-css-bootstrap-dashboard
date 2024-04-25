@@ -9,3 +9,13 @@
 body {
     font-family: Roboto, Arial;
 }
+
+/* stile per le icone */
+
+.icon {
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
