@@ -28,7 +28,111 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!-- embed JavaScript di Bootstrap -->
-    placeholder
+    <header class="mb-4">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/duck.png" alt="Dashboard" width="60" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anagrafica utenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Storico prestiti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Help</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 bg-light" type="search" placeholder="Cerca..."
+                            aria-label="Search" />
+                        <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR -->
+    </header>
+    <main>
+        <div class="container-fluid p-0" style="max-width: 90%">
+            <div>
+                <h2>Nuovo Libro</h2>
+            </div>
+            <!-- FORM -->
+            <form>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <label for="firstName" class="form-label fw-bold">Nome Autore</label>
+                        <input id="firstName" type="text" class="form-control"
+                            placeholder="Inserisci il nome dell'autore">
+                    </div>
+                    <div class="col-6">
+                        <label for="lastName" class="form-label fw-bold">Cognome Autore</label>
+                        <input id="lastName" type="text" class="form-control"
+                            placeholder="Inserisci il cognome dell'autore">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <label for="title" class="form-label fw-bold">Titolo</label>
+                        <input id="title" type="text" class="form-control" placeholder="Inserisci il titolo del libro">
+                        <div class="form-text" id="basic-addon4">Titolo versione Italiana</div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 col-md-4">
+                        <label for="genre" class="form-label fw-bold">Genere</label>
+                        <select id="genre" class="form-select" aria-label="Default select example">
+                            <option selected valus="1">Genere 1</option>
+                            <option value="2">Genere 2</option>
+                            <option value="3">Genere 3</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <label for="year" class="form-label fw-bold">Anno di Pubblicazione</label>
+                        <input id="year" type="number" class="form-control" placeholder="Inserisci l'anno">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <label for="isbn" class="form-label fw-bold">ISBN#</label>
+                        <input id="isbn" type="text" class="form-control" placeholder="Inserisci il codice ISBN#">
+                    </div>
+                </div>
+                <div class="row m-0 mt-5">
+                    <hr>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <label for="notes" class="form-label fw-bold">Note</label>
+                        <textarea id="notes" class="form-control" aria-label="With textarea"
+                            placeholder="Inserisci eventuali note sul libro" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="form-check mt-4">
+                    <input id="check" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label for="check" class="form-check-label fw-medium">
+                        Disponibile anche in digitale
+                    </label>
+                </div>
+                <div class="mt-4">
+                    <button type="button" class="btn btn-primary">Aggiungi libro
+                    </button>
+                </div>
+            </form>
+            <!-- FORM -->
+        </div>
+    </main>
 </body>
 
 
