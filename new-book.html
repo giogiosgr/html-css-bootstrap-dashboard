@@ -33,7 +33,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="img/duck.png" alt="Dashboard" width="60" />
+                    <img src="img/duck.png" alt="Dashboard" width="50" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -67,32 +67,26 @@
     </header>
     <main>
         <div class="container-fluid p-0" style="max-width: 90%">
-            <div>
-                <h2>Nuovo Libro</h2>
-            </div>
+            <h2 class="mt-4">Nuovo Libro</h2>
             <!-- FORM -->
             <form action="paperino.html" method="GET">
-                <div class="row mt-4">
-                    <div class="col-6">
+                <div class="row">
+                    <div class="col-6 mt-4">
                         <label for="firstName" class="form-label fw-bold">Nome Autore</label>
                         <input id="firstName" name="firstname" type="text" class="form-control"
                             placeholder="Inserisci il nome dell'autore" required>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 mt-4">
                         <label for="lastName" class="form-label fw-bold">Cognome Autore</label>
                         <input id="lastName" name="lastname" type="text" class="form-control"
                             placeholder="Inserisci il cognome dell'autore" required>
                     </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col">
+                    <div class="col-12 mt-4">
                         <label for="title" class="form-label fw-bold">Titolo</label>
                         <input id="title" name="title" type="text" class="form-control"
                             placeholder="Inserisci il titolo del libro" required>
                         <div class="form-text" id="basic-addon4">Titolo versione Italiana</div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-12 col-md-4 mt-4">
                         <label for="genre" class="form-label fw-bold">Genere</label>
                         <select id="genre" name="genre" class="form-select" aria-label="Default select example">
@@ -110,26 +104,26 @@
                         <input id="isbn" name="isbn" type="number" class="form-control"
                             placeholder="Inserisci il codice ISBN#" required>
                     </div>
-                </div>
-                <div class="row m-0 mt-5">
-                    <hr>
-                </div>
-                <div class="row mt-4">
-                    <div class="col">
-                        <label for="notes" class="form-label fw-bold">Note</label>
+                    <div class="col-12 m-0 mt-5">
+                        <hr>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <label for=" notes" class="form-label fw-bold">Note</label>
                         <textarea id="notes" name="notes" class="form-control" aria-label="With textarea"
                             placeholder="Inserisci eventuali note sul libro" rows="4"></textarea>
                     </div>
-                </div>
-                <div class="form-check mt-4">
-                    <input id="check" class="form-check-input" type="checkbox" value="True">
-                    <label for="check" class="form-check-label fw-medium">
-                        Disponibile anche in digitale
-                    </label>
-                </div>
-                <div class="mt-4 mb-4">
-                    <button type="submit" class="btn btn-primary">Aggiungi libro
-                    </button>
+                    <div class="col-12 mt-4">
+                        <div class="form-check">
+                            <input id="check" class="form-check-input" type="checkbox" value="True">
+                            <label for="check" class="form-check-label fw-medium">
+                                Disponibile anche in digitale
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mt-4 mb-4">
+                        <button type="submit" class="btn btn-primary">Aggiungi libro
+                        </button>
+                    </div>
                 </div>
             </form>
             <!-- FORM -->
